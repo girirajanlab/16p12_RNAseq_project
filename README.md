@@ -1,9 +1,5 @@
 # 16p12.1 RNAseq project
-Scripts for [16p12.2 RNA sequencing paper](https://autism.bx.psu.edu/).
-
-# Description
-
-Directories correspond with different sections of the text. The data directory has general datasets used in multiple sections.
+Scripts for [16p12.2 RNA sequencing paper](https://autism.bx.psu.edu/). Directories correspond with different sections of the text. The data directory has general datasets used in multiple sections.
 
 * global_differential_expression: Differential expression between carriers and non-carriers of the deletion
 * effect_size: Effect of rare variants towards gene expression changes
