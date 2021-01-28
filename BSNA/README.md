@@ -8,6 +8,7 @@ Python 3.7.3:
 
 * pandas 1.0.0
 * numpy 1.16.2
+* random
 
 ### connector_genes.py
 
@@ -16,3 +17,7 @@ Script that gets the connector genes in a gene network from an input list of gen
 ### mean_shortest_distance.py
 
 Script that finds the mean shortest distance between one gene and a list of genes in a gene network.
+
+### permute_network.py
+
+Script that permutes network by randomly reassigning node labels.
