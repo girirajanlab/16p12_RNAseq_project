@@ -55,17 +55,3 @@ Create box plots comparing brain-specific network and permuted network (Figures 
 
 Get confidence intervals for differences between brain-specific network and permuted network.
 
-
-## OLD
-
-### connector_genes.py
-
-Script that gets the connector genes in a gene network from an input list of genes.
-
-### mean_shortest_distance.py
-
-Script that finds the mean shortest distance between one gene and a list of genes in a gene network.
-
-### permute_network.py
-
-Script that permutes network by randomly reassigning node labels.
