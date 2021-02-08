@@ -29,11 +29,3 @@ Summarize ASE by individual
 ### summary_cadd.ipynb
 
 Summarize ASE with deleterious variant on overexpressed haplotype by individual.
-
-## OLD
-
-
-
-### ASE_postprocessing.py
-
-This script takes output from Phaser Gene AE and calculates signficance for ASE for each genes using a binomial test. The script also combines p-values for multiple replicates and does multiple hypothesis correction.
