@@ -2,41 +2,52 @@
 
 Code for global differential expression analysis section of paper.
 
-### Libraries used
 
-R 3.6.3:
-
-* [edgeR 3.28.1](https://bioconductor.org/packages/release/bioc/html/edgeR.html)
-* [goseq 1.38.0](https://bioconductor.org/packages/release/bioc/html/goseq.html)
-* glue 1.4.1
-
-Python 3.7.3:
-
-* pandas 1.0.0
-* scipy 1.1.0
-* statsmodels 0.11.0
-
-### edger.R
+### edgeR_full_cohort.ipynb
 
 This script is used to calculate differential expression between carriers and non-carriers of the 16p12.1 deletion. As input, it takes the raw read counts of the full cohort and the carrier status of all of the samples in the cohort.
 
-### get_intersect.py
+### edgeR_exclude_one.ipynb
+
+This script runs differential expression between carriers and non-carriers excluding one individual at a time.
+
+### intersection_exclude_one.ipynb
 
 Takes the intersect of gene differentially expressed in our cohort with each sample excluded.
 
-### goseq.R
+### edger_goseq.R
 
 Runs go enrichment analysis on the differentially expressed genes using goseq.
 
-### GTEx_tissue_enrichment.py
+### edger_goseq_disease.R
 
-Runs enrichment analysis for genes preferrentially expressed in [GTEx](https://www.gtexportal.org/home/index.html) tissues using a Fisher's exact test.
+Runs go enrichment analysis on the differentially expressed genes in five disease gene categories using goseq.
 
+### prepare_vcf_by_replicate.ipynb
 
-### BrainSpan_tissue_enrichment.py
+For GEMMA, prepare vcf file by taking in old vcf file and duplicating sample records x3.
 
-Runs enrichment analysis for genes preferrentially expressed in [BrainSpan](https://www.brainspan.org/) tissues at different developmental timepoints using a Fisher's exact test.
+### prepare_fam_by_replicate.ipynb
 
-### single_cell_tissue_enrichment.py
+For GEMMA, prepare fam file by taking in old fam file and renaming samples by replicate names.
 
-Runs enrichment analysis for genes preferrentially expressed in [single-cell RNAseq clusters](https://doi.org/10.1126/science.aap8809) using a Fisher's exact test.
+### GEMMA.sh
+
+Get relatedness matrix between replicates using WGS data. Runs prepare_vcf_by_replicate.ipynb and prepare_fam_by_replicate.ipynb internally.
+
+### pqlseq.ipynb
+
+Run PQLseq relatedness corrected differential expression between carriers and non-carriers.
+
+### edger_pqlseq_overlap.ipynb
+
+Overlap between edger and PQLseq (Figure S2A).
+
+### pqlseq_goseq.R
+
+Runs go enrichment analysis on the differentially expressed genes found by PQLseq using goseq.
+
+### pqlseq_goseq_disease.R
+
+Runs go enrichment analysis on the differentially expressed genes found by PQLseq in five disease gene categories using goseq.
+

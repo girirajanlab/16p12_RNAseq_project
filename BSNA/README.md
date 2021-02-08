@@ -2,13 +2,61 @@
 
 Scripts to get connector genes and shortest distance metrics in a [brain-specific network](https://doi.org/10.1038/nn.4353).
 
-### Libraries used
 
-Python 3.7.3:
+### global_de_connectors.ipynb
 
-* pandas 1.0.0
-* numpy 1.16.2
-* random
+Get connector genes between all global DE genes.
+
+### global_de_connectors_panther.ipynb
+
+GO term enrichment analysis of global DE connector genes.
+
+### connectors_outlier_and_rare_variant.ipynb
+
+Get connector genes between outliers and rare variants
+
+### connectors_outlier_and_rare_variant_go.ipynb
+
+Run GO term analysis on outlier and rare variant connectors.
+
+### permute_network.ipynb
+
+Create permuted network based on brain-specific network.
+
+### outlier2rare_variant.ipynb
+
+Calculate mean shortest distances between outlier genes and rare variant genes in a brain-specific network.
+
+### outlier2rare_variant_permuted.ipynb
+
+Calculate mean shortest distances between outlier genes and rare variant genes in a permuted network.
+
+### de2rare_variant.ipynb
+
+Calculate mean shortest distances between DE genes and rare variant genes in a brain-specific network.
+
+### de2rare_variant_permuted.ipynb
+
+Calculate mean shortest distances between DE genes and rare variant genes in a permuted network.
+
+### globalde2globalde.ipynb
+
+Calculate mean shortest distances between global DE genes in a brain-specific network.
+
+### globalde2globalde_permuted.ipynb
+
+Calculate mean shortest distances between global DE genes in a permuted network.
+
+### permuted_network_box_plots.ipynb
+
+Create box plots comparing brain-specific network and permuted network (Figures 5E, 5F, S4B)
+
+### conf_intervals_r.R
+
+Get confidence intervals for differences between brain-specific network and permuted network.
+
+
+## OLD
 
 ### connector_genes.py
 
