@@ -14,7 +14,7 @@ Run PCA analysis on genotypes and gene expression of RNAseq cohort.
 
 ### combine_covariates.ipynb
 
-Combine explicit (sex, carrier status, family) and principle copmonent covariates.
+Combine explicit (sex, carrier status, family) and principal component covariates.
 
 ### perm.sh
 
