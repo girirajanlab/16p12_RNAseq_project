@@ -1,9 +1,5 @@
 # expression quantitative trait loci (eQTL)
 
-### tpm_by_subject.ipynb
-
-Get median TPM for each subject in RNAseq cohort.
-
 ### filter_cov.ipynb
 
 Filter genes for at least 50% of samples with > 0.1 TPM.
@@ -20,13 +16,9 @@ Run PCA analysis on genotypes and gene expression of RNAseq cohort.
 
 Combine explicit (sex, carrier status, family) and principal component covariates.
 
-### qtltools_perm.sh
+### perm.sh
 
 Run QTLtools on RNAseq cohort.
-
-### run_FDR.sh
-
-Concat output of QTLtools cis output and use QTLtools script runFDR_cis.R to get FDR values and filter for eQTLs with FDR < 0.05.
 
 ### annotate_eqtls.ipynb
 
