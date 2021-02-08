@@ -1,5 +1,7 @@
 # Alignment of RNAseq 
 
+Following the [GTEx Consortium RNAseq pipeline](https://github.com/broadinstitute/gtex-pipeline/tree/master/rnaseq).
+
 ### Software used
 
 - Trimmomatic 0.36
