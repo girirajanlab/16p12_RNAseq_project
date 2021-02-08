@@ -1,6 +1,6 @@
 # Gene and Isoform Counts
 
-Following the [GTEx Consortium RNAseq pipeline](https://github.com/broadinstitute/gtex-pipeline/tree/master/rnaseq)
+Following the [GTEx Consortium RNAseq pipeline](https://github.com/broadinstitute/gtex-pipeline/tree/master/rnaseq).
 
 ### Software used
 
