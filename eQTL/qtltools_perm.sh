@@ -18,7 +18,8 @@ echo `date` started on $HOSTNAME
 chrom=`cat chrom.list | awk -v task_id=$SLURM_ARRAY_TASK_ID 'NR==task_id'`
 
 echo `date` $chrom
-/data5/software/QTLtools_1.2_Ubuntu16.04_x86_64/QTLtools_1.2_Ubuntu16.04_x86_64 cis --vcf /data3/16p12_WGS/phasing/whatshap/combined.vcf.gz \
+/data5/software/QTLtools_1.2_Ubuntu16.04_x86_64/QTLtools_1.2_Ubuntu16.04_x86_64 cis \
+ --vcf /data3/16p12_WGS/phasing/whatshap/combined.vcf.gz \
  --bed 16p12_lcl_gene_tpm.by_subject.50perc.anno.bed.gz \
  --cov covariates.combined.txt \
  --permute 1000 \
