@@ -21,6 +21,18 @@ Runs go enrichment analysis on the differentially expressed genes using goseq.
 
 Runs go enrichment analysis on the differentially expressed genes in five disease gene categories using goseq.
 
+### edger_goseq_brainspan.R
+
+Runs go enrichment analysis on the differentially expressed genes in brain span preferentially expressed tissues.
+
+### edger_goseq_single_cell.R
+
+Runs go enrichment analysis on the differentially expressed genes in five disease gene categories in genes preferentially expressed in single cell clusters.
+
+### edger_goseq_gtex.R
+
+Runs go enrichment analysis on the differentially expressed genes in GTEx preferentially expressed genes.
+
 ### prepare_vcf_by_replicate.ipynb
 
 For GEMMA, prepare vcf file by taking in old vcf file and duplicating sample records x3.

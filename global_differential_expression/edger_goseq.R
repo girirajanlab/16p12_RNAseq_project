@@ -3,11 +3,11 @@
 library(goseq)
 suppressPackageStartupMessages(library('GenomicFeatures'))
 
-map    = read.table('exon_length.tsv', header=TRUE)
+map    = read.table('../data/exon_length.tsv', header=TRUE)
 rownames(map)   = map$ensembl
 
-diff = read.table('output/edgr_exclude_one/intersect.tsv', sep='\t', header=TRUE)
-keep = scan('output/edgr_exclude_one/keep.intersect.txt', what="", sep="\n")
+diff = read.table('output/no_sex/intersect.tsv', sep='\t', header=TRUE)
+keep = scan('output/no_sexcd/keep.intersect.txt', what="", sep="\n")
 
 rownames(diff) = diff$ensembl
 
@@ -32,5 +32,5 @@ GO.wall$over_rep_FDR = p.adjust(GO.wall$over_represented_pvalue, method="BH")
 enriched.GO= GO.wall[GO.wall$over_rep_FDR < .05,]
 dim(enriched.GO)
 
-write.table(GO.wall, 'test.carrier_non_carrier.tsv', sep='\t', row.names=F)
+write.table(GO.wall, 'output/no_sex/intersect.go.tsv', sep='\t', row.names=F)
 
