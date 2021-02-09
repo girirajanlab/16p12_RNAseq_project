@@ -3,13 +3,11 @@
 Code for global differential expression analysis section of paper.
 
 
-### edgeR_full_cohort.ipynb
+### edgeR.ipynb
 
 This script is used to calculate differential expression between carriers and non-carriers of the 16p12.1 deletion. As input, it takes the raw read counts of the full cohort and the carrier status of all of the samples in the cohort.
 
-### edgeR_exclude_one.ipynb
-
-This script runs differential expression between carriers and non-carriers excluding one individual at a time.
+This script also runs differential expression between carriers and non-carriers excluding one individual at a time.
 
 ### intersection_exclude_one.ipynb
 
