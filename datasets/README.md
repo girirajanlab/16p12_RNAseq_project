@@ -25,6 +25,10 @@ DDD G2P	ID/DD
 ### gtex_preferential_tissue_enrichment.tsv
 Genes annotated for preferential expression in different GTEx tissues.
 
+### GTEx_tissue_expression_SMTSD.tsv
+
+Genes annotate for expression in different GTEx tissues.
+
 ### brainspan_preferential_tissue_expression_minor_epoch.tsv
 Gene annotated for preferential expression at different developmental time points and tissues from BrainSpan.
 
