@@ -9,11 +9,13 @@ Scripts for [16p12.2 RNA sequencing paper](https://autism.bx.psu.edu/). Director
 * global_differential_expression
 * effect_size: Effect of rare variants towards gene expression changes
 * family_based: Family-based differential expression and alternative splicing
+* alternative_splicing: Family-based alternative splicing
 * BSNA: Brain-specific network analysis
 * ASE: Allele specific expression
 * eQTL: expression quantitative trait loci
 * WGCNA: Weighted gene correlation network analysis
 * linear_model: Association between all gene expression change metrics
+* datasets
 
 
 
