@@ -13,3 +13,7 @@ R:
 ### wgcna_combat.r
 
 Script takes RSEM gene counts as input, does weighted gene correlation network analysis, and outputs gene co-expression clusters.
+
+### goseq.ipynb
+
+GO Term enrichment of WGCNA gene clusters.
