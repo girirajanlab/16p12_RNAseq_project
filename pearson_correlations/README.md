@@ -9,6 +9,6 @@ R 3.6.3:
 
 * corrplot 0.84
 
-### pearson_correlations.R
+### correlation.R
 
 Generates heatmap for pearson correlation coefficients and p-values between all gene expression differences used in the study.
