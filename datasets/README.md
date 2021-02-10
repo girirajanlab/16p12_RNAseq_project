@@ -15,3 +15,7 @@ Genes annotated for preferential expression in different GTEx tissues.
 
 ### brainspan_preferential_tissue_expression_minor_epoch.tsv
 Gene annotated for preferential expression at different developmental time points and tissues from BrainSpan.
+
+### gene_names_mapping_new.ipynb
+
+General gene annotations used through the analysis.
