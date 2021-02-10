@@ -18,8 +18,6 @@ Get zscores of TPM by subject of protein coding and LCL expressed genes.
 
 Ruun PEER correction on TPM z-scores. These are the final values we use in the paper.
 
-
-### OLD
 ### outlier_log_odds.py
 
 Calculates log odds ratios for the presence of rare variants near genes with outlier expression.
