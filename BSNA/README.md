@@ -6,6 +6,25 @@ Scripts to get connector genes and shortest distance metrics in a [brain-specifi
 
 Get shortest distances from weighted Brain-specific network.
 
+### de_genes2de_genes.py 
+
+Get shortest distance between global DE genes in a network.
+
+### de_perm.sh
+
+Submit de_genes2de_genes.py as a batch job.
+
+### individual_perm.sh
+
+Get shortest distance between an individuals rare variants and gene expression changes in a network.
+
+### rare_var2exp_change.py
+
+Submit rare_var2exp_change.py as a batch job.
+
+
+# OLD [REMOVE]
+
 ### global_de_connectors.ipynb
 
 Get connector genes between all global DE genes.
