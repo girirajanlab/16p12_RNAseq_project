@@ -34,7 +34,7 @@ de_genes = de.gene.to_list()
 # filter out genes not in network
 de_genes = [s for s in de_genes if s in network_genes]
 
-# get network for variants/expression changes
+# get network for DE genes
 subnet = net[net.startg.isin(de_genes)].copy()
 subnet = subnet[subnet.endg.isin(de_genes)].copy()
 
