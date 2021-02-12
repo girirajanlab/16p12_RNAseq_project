@@ -1,13 +1,13 @@
 library(goseq)
 suppressPackageStartupMessages(library('GenomicFeatures'))
 
-map    = read.table('../16p12.2_rnaseq_analysis/differential_expression_analysis/exon_length.tsv', header=TRUE)
+map    = read.table('../16p12.2_rnaseq_analysis/data/exon_length.tsv', header=TRUE)
 rownames(map)   = map$ensembl
 
 
-diff = read.table('pqlseq_by_replicate_FDR.tsv', sep='\t', header=TRUE)
+diff = read.table('output/pqlseq_by_replicate_no_sex_FDR.tsv', sep='\t', header=TRUE)
 rownames(diff) = diff$ensembl
-keep = read.table('pqlseq_by_replicate.tsv', sep='\t', header=TRUE)
+keep = read.table('output/pqlseq_by_replicate_no_sex.tsv', sep='\t', header=TRUE)
 keep = rownames(keep)
 
 assayed.genes = unique(keep)
@@ -31,5 +31,5 @@ enriched = go[go$over_rep_FDR < .05,]
 dim(enriched)
 enriched
 
-filename = 'go_enrichment.tsv'
+filename = 'output/go_enrichment_nosex.tsv'
 write.table(enriched, filename, sep='\t', row.names=F)

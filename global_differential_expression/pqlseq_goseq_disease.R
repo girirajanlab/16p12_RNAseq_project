@@ -1,13 +1,15 @@
 library(goseq)
 suppressPackageStartupMessages(library('GenomicFeatures'))
 
-map    = read.table('../16p12.2_rnaseq_analysis/differential_expression_analysis/exon_length.tsv', header=TRUE)
+map    = read.table('../16p12.2_rnaseq_analysis/data/exon_length.tsv', header=TRUE)
 rownames(map)   = map$ensembl
 
-diff = read.table('pqlseq_by_replicate_FDR.tsv', sep='\t', header=TRUE)
+diff = read.table('output/pqlseq_by_replicate_no_sex_FDR.tsv', sep='\t', header=TRUE)
 rownames(diff) = diff$ensembl
+keep = read.table('output/pqlseq_by_replicate_no_sex.tsv', sep='\t', header=TRUE)
+keep = rownames(keep)
 
-anno = read.table('ndd_gene_cateogires.tsv', header=T, sep='\t', stringsAsFactors = F)
+anno = read.table('../16p12.2_rnaseq_analysis/tables_for_goseq/ndd_gene_categories.tsv', header=T, sep='\t', stringsAsFactors = F)
 
 split_to_vec = function(s) {
     if (s == ''){
@@ -18,9 +20,6 @@ split_to_vec = function(s) {
 go_map = lapply(anno$database, split_to_vec)
 names(go_map) = anno$ensembl
 
-
-keep = anno[,'ensembl']
-diff = diff[diff$ensembl %in% keep, ]
 
 assayed.genes = unique(keep)
 de.genes = rownames(diff)
