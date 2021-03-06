@@ -56,6 +56,9 @@ Get GT information for each person in the 16p12 RNA cohort.
 
 Summarize number of GTEx minor eQTLs per person.
 
+### get_maf_eqtl_freq_disease.ipynb
+
+Summarize number of GTEx minor eQTLs per person by disease gene set category.
 
 
 
